@@ -13,5 +13,8 @@ function makeGallery(arr) {
 }
 
 makeGallery(galleryItems);
-const galleryEl = new SimpleLightbox('ul.gallery a');
+const galleryEl = new SimpleLightbox('ul.gallery a', {
+    captionsData: "alt",
+    captionsDelay: 250,
+});
 console.log(galleryItems);
